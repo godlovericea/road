@@ -1,0 +1,828 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "常州",
+                "mag": 2,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "test": [
+                    {
+                        "index": "1",
+                        "city": "常州",
+                        "projectName": "中云智网数据产业园智能驾驶、智慧交通",
+                        "company": "中云智网数据产业园",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "2",
+                        "city": "常州",
+                        "projectName": "科教城管会本地5G产业应用",
+                        "company": "科教城管会",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.946973,
+                    31.772752
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "淮安",
+                "mag": 2,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "test": [
+                    {
+                        "index": "3",
+                        "city": "淮安",
+                        "projectName": "和兴汽车智能制造、无人驾驶",
+                        "company": "和兴汽车",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "4",
+                        "city": "淮安",
+                        "projectName": "敏安汽车智能制造、无人驾驶",
+                        "company": "敏安汽车",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.021265,
+                    33.597506
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "南京",
+                "mag": 30,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "test": [
+                    {
+                        "index": "5",
+                        "city": "南京",
+                        "projectName": "青奥体育公园5G赛事直播项目",
+                        "company": "江北青奥体育公园",
+                        "cooperOffice": "移动",
+                        "dateTime": "2018年9月"
+                    },
+                    {
+                        "index": "6",
+                        "city": "南京",
+                        "projectName": "秦淮5G灯会直播项目",
+                        "company": "扬子晚报、中国江苏网、南京电视台",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年2月"
+                    },
+                    {
+                        "index": "7",
+                        "city": "南京",
+                        "projectName": "秦淮智慧画舫项目",
+                        "company": "秦淮风光旅游有限公司",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年4月"
+                    },
+                    {
+                        "index": "8",
+                        "city": "南京",
+                        "projectName": "“南京江宁春牛首马拉松”5G直播项目",
+                        "company": "江苏健和文化体育产业发展有限公司",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年4月"
+                    },
+                    {
+                        "index": "9",
+                        "city": "南京",
+                        "projectName": "未来网络峰会无人接驳车项目",
+                        "company": "未来网络峰会管委会",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "10",
+                        "city": "南京",
+                        "projectName": "南京第一医院5G手术远程示教项目",
+                        "company": "南京市第一医院",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "11",
+                        "city": "南京",
+                        "projectName": "江苏省人民医院5G MR远程手术项目",
+                        "company": "江苏省人民医院",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "12",
+                        "city": "南京",
+                        "projectName": "江苏银行5G视频会议项目",
+                        "company": "江苏银行",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "13",
+                        "city": "南京",
+                        "projectName": "国网电力切片",
+                        "company": "南京电网",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年4月"
+                    },
+                    {
+                        "index": "14",
+                        "city": "南京",
+                        "projectName": "省人民医院5G远控手术",
+                        "company": "省人医",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "15",
+                        "city": "南京",
+                        "projectName": "开沃集团车联网及无人驾驶",
+                        "company": "南京开沃",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年4月"
+                    },
+                    {
+                        "index": "16",
+                        "city": "南京",
+                        "projectName": "基于联通5G的江北新区智慧教育创新项目",
+                        "company": "弘阳集团",
+                        "cooperOffice": "弘阳集团、联通",
+                        "dateTime": "2019年3月12日已签约"
+                    },
+                    {
+                        "index": "17",
+                        "city": "南京",
+                        "projectName": "合作建设5G产业创新服务基地",
+                        "company": "江苏省产业技术研究院移动通信技术研究所",
+                        "cooperOffice": "江苏省产业技术研究院移动通信技术研究所、联通",
+                        "dateTime": "2019年3月15日已签约"
+                    },
+                    {
+                        "index": "18",
+                        "city": "南京",
+                        "projectName": "基于5G的公共安全服务",
+                        "company": "南京公安研究所",
+                        "cooperOffice": "南京公安研究院、联通",
+                        "dateTime": "2019年3月19日已签约"
+                    },
+                    {
+                        "index": "19",
+                        "city": "南京",
+                        "projectName": "5G+VR新媒体融合应用",
+                        "company": "南京广电",
+                        "cooperOffice": "南京广电、联通",
+                        "dateTime": "2019年5月22日已签约"
+                    },
+                    {
+                        "index": "20",
+                        "city": "南京",
+                        "projectName": "基于5G的智慧城市管理",
+                        "company": "江苏软件园",
+                        "cooperOffice": "联通、江苏软件园、省产研院、东南大学、南京无人系统控制及通讯技术研究院",
+                        "dateTime": "2019年6月20日已签约"
+                    },
+                    {
+                        "index": "21",
+                        "city": "南京",
+                        "projectName": "5G智慧金融",
+                        "company": "工行",
+                        "cooperOffice": "南京联通、工商银行",
+                        "dateTime": "2019年6月22日已签约"
+                    },
+                    {
+                        "index": "22",
+                        "city": "南京",
+                        "projectName": "5G+新媒体、5G新闻发布厅",
+                        "company": "南京报业传媒集团",
+                        "cooperOffice": "南京报业传媒集团、联通",
+                        "dateTime": "2019年6月24日已签约"
+                    },
+                    {
+                        "index": "23",
+                        "city": "南京",
+                        "projectName": "5G+智慧物流",
+                        "company": "江苏顺丰",
+                        "cooperOffice": "联通、江苏顺丰",
+                        "dateTime": "2019年4月16日已签约"
+                    },
+                    {
+                        "index": "24",
+                        "city": "南京",
+                        "projectName": "5G+智慧快递",
+                        "company": "江苏省快递协会",
+                        "cooperOffice": "联通、江苏快递协会",
+                        "dateTime": "2019年6月11日已签约"
+                    },
+                    {
+                        "index": "25",
+                        "city": "南京",
+                        "projectName": "5G+无人驾驶",
+                        "company": "中智行科技有限公司",
+                        "cooperOffice": "联通、中智行科技",
+                        "dateTime": "2019年5月30日已签约"
+                    },
+                    {
+                        "index": "26",
+                        "city": "南京",
+                        "projectName": "5G智慧园区项目",
+                        "company": "招商蛇口智慧园区",
+                        "cooperOffice": "联通、招商蛇口智慧园区"
+                    },
+                    {
+                        "index": "27",
+                        "city": "南京",
+                        "projectName": "5G智慧大院覆盖项目",
+                        "company": "南京市政府",
+                        "cooperOffice": "联通、南京市政府"
+                    },
+                    {
+                        "index": "28",
+                        "city": "南京",
+                        "projectName": "5G社区医疗项目",
+                        "company": "秦淮区国家级示范社区服务中心",
+                        "cooperOffice": "联通、秦淮区服务中心"
+                    },
+                    {
+                        "index": "29",
+                        "city": "南京",
+                        "projectName": "金陵饭店智慧酒店项目",
+                        "company": "金陵饭店",
+                        "cooperOffice": "联通、金陵饭店",
+                        "dateTime": "计划7月签约"
+                    },
+                    {
+                        "index": "30",
+                        "city": "南京",
+                        "projectName": "5G智慧港口项目",
+                        "company": "南京港",
+                        "cooperOffice": "联通、南京港"
+                    },
+                    {
+                        "index": "31",
+                        "city": "南京",
+                        "projectName": "5G智慧机场项目",
+                        "company": "禄口机场",
+                        "cooperOffice": "联通、南京禄口机场"
+                    },
+                    {
+                        "index": "32",
+                        "city": "南京",
+                        "projectName": "5G工业互联网平台",
+                        "company": "南京工业互联网研究院",
+                        "cooperOffice": "联通、工业互联网研究院"
+                    },
+                    {
+                        "index": "33",
+                        "city": "南京",
+                        "projectName": "5G浦口民用无人机试飞基地项目",
+                        "company": "南京长空科技",
+                        "cooperOffice": "联通、长空科技"
+                    },
+                    {
+                        "index": "34",
+                        "city": "南京",
+                        "projectName": "5G智慧工厂",
+                        "company": "拜腾汽车",
+                        "cooperOffice": "联通、拜腾汽车",
+                        "dateTime": "计划7月签约"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.767413,
+                    32.041544
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "苏州",
+                "mag": 33,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "test": [
+                    {
+                        "index": "35",
+                        "city": "苏州",
+                        "projectName": "基于5G技术的柔性生产线",
+                        "company": "罗博特科智能科技股份有限公司",
+                        "cooperOffice": "移动",
+                        "dateTime": "2018年11月"
+                    },
+                    {
+                        "index": "36",
+                        "city": "苏州",
+                        "projectName": "基于5G技术的智能按灯系统",
+                        "company": "东山精密",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年3月"
+                    },
+                    {
+                        "index": "37",
+                        "city": "苏州",
+                        "projectName": "基于5G的MR沙箱与地理教育结合项目",
+                        "company": "星洲小学",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年4月"
+                    },
+                    {
+                        "index": "38",
+                        "city": "苏州",
+                        "projectName": "基于5G的环金鸡湖马拉松赛事直播",
+                        "company": "环金鸡湖马拉松赛主委会",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年3月"
+                    },
+                    {
+                        "index": "39",
+                        "city": "苏州",
+                        "projectName": "基于5G智慧警务监控",
+                        "company": "昆山市公安局",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年3月"
+                    },
+                    {
+                        "index": "40",
+                        "city": "苏州",
+                        "projectName": "基于5G的全景看虎丘景区",
+                        "company": "虎丘景区",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "41",
+                        "city": "苏州",
+                        "projectName": "基于5G的智慧旅游同里旅游节",
+                        "company": "同里景区",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "42",
+                        "city": "苏州",
+                        "projectName": "基于5G的远程多路直播手术及远程教学",
+                        "company": "苏州大学附属第二医院",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "43",
+                        "city": "苏州",
+                        "projectName": "基于5G的智慧治疗远程会诊",
+                        "company": "常熟玉蕙口腔医院",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "44",
+                        "city": "苏州",
+                        "projectName": "基于5G的智慧交通",
+                        "company": "五方智能车科技有限公司",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年1月"
+                    },
+                    {
+                        "index": "45",
+                        "city": "苏州",
+                        "projectName": "基于5G的智慧金融网点",
+                        "company": "工商银行苏州分行",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "46",
+                        "city": "苏州",
+                        "projectName": "苏州大学5G智慧校园",
+                        "company": "苏州大学",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "47",
+                        "city": "苏州",
+                        "projectName": "奇瑞捷豹路虎AR智能装配",
+                        "company": "奇瑞捷豹",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "48",
+                        "city": "苏州",
+                        "projectName": "建设银行智慧金融",
+                        "company": "建设银行",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "49",
+                        "city": "苏州",
+                        "projectName": "车辆智能联网项目",
+                        "company": "苏州工业园区",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "50",
+                        "city": "苏州",
+                        "projectName": "MEC项目",
+                        "company": "大金空调",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "51",
+                        "city": "苏州",
+                        "projectName": "5G智慧教育",
+                        "company": "苏州工业园区教师发展中心",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年3月"
+                    },
+                    {
+                        "index": "52",
+                        "city": "苏州",
+                        "projectName": "5G融媒体",
+                        "company": "苏州日社报",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "53",
+                        "city": "苏州",
+                        "projectName": "5G融媒体",
+                        "company": "常熟电视台",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "54",
+                        "city": "苏州",
+                        "projectName": "5G无人银行",
+                        "company": "昆山农商行",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "55",
+                        "city": "苏州",
+                        "projectName": "MEC项目",
+                        "company": "三一重工",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "56",
+                        "city": "苏州",
+                        "projectName": "5G融媒体直播",
+                        "company": "苏州广电融媒体中心",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年2月"
+                    },
+                    {
+                        "index": "57",
+                        "city": "苏州",
+                        "projectName": "智能制造",
+                        "company": "张家港协鑫集成科技有限公司",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年2月"
+                    },
+                    {
+                        "index": "58",
+                        "city": "苏州",
+                        "projectName": "5G智慧政务研究",
+                        "company": "苏州市行政审批局",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年4月"
+                    },
+                    {
+                        "index": "59",
+                        "city": "苏州",
+                        "projectName": "智能路灯、远程远控",
+                        "company": "苏州欧普照明有限公司",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年4月"
+                    },
+                    {
+                        "index": "60",
+                        "city": "苏州",
+                        "projectName": "高清视频监控",
+                        "company": "苏州市公安局高新区分局",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "61",
+                        "city": "苏州",
+                        "projectName": "车联网及无人驾驶",
+                        "company": "苏州高铁新城管委会",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "62",
+                        "city": "苏州",
+                        "projectName": "基于5G应用的智能质检/AR增强现实辅助制造",
+                        "company": "奇瑞捷豹路虎",
+                        "cooperOffice": "奇瑞捷豹路虎、联通",
+                        "dateTime": "2019年4月"
+                    },
+                    {
+                        "index": "63",
+                        "city": "苏州",
+                        "projectName": "基于5G应用的智慧校园",
+                        "company": "西交利物浦大学",
+                        "cooperOffice": "西交利物浦大学、联通",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "64",
+                        "city": "苏州",
+                        "projectName": "基于5G应用的工业智能机器人",
+                        "company": "博众精工科技股份有限公司",
+                        "cooperOffice": "博众精工、联通",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "65",
+                        "city": "苏州",
+                        "projectName": "基于5G应用的智慧工厂/智慧仓储",
+                        "company": "箭牌智能科技",
+                        "cooperOffice": "箭牌智能、联通",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "66",
+                        "city": "苏州",
+                        "projectName": "基于5G应用的智慧交通",
+                        "company": "苏州德亚交通技术有限公司",
+                        "cooperOffice": "苏州德亚交通、联通",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "67",
+                        "city": "苏州",
+                        "projectName": "基于5G的工业互联网、智能制造产品研发",
+                        "company": "昆山蕴启工业智能制造实验室有限公司",
+                        "cooperOffice": "蕴启工业智能制造实验室",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "68",
+                        "city": "苏州",
+                        "projectName": "基于5G应用的智慧园区",
+                        "company": "昆山市银桥集团科创发展有限公司",
+                        "cooperOffice": "银桥集团、联通、上海产互",
+                        "dateTime": "2019年6月"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.619585,
+                    31.299379
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "无锡",
+                "mag": 10,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "test": [
+                    {
+                        "index": "69",
+                        "city": "无锡",
+                        "projectName": "5G+工业制造项目",
+                        "company": "无锡小天鹅",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "70",
+                        "city": "无锡",
+                        "projectName": "5G智慧农业",
+                        "company": "中农物联网",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年7月"
+                    },
+                    {
+                        "index": "71",
+                        "city": "无锡",
+                        "projectName": "5G使能工业制造项目",
+                        "company": "华洋滚轴",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "72",
+                        "city": "无锡",
+                        "projectName": "5G+智慧旅游",
+                        "company": "南禅寺景区",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "73",
+                        "city": "无锡",
+                        "projectName": "5G视频应用创新",
+                        "company": "螳螂慧视",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年5月"
+                    },
+                    {
+                        "index": "74",
+                        "city": "无锡",
+                        "projectName": "5G智能制造",
+                        "company": "洲翔集团",
+                        "cooperOffice": "移动",
+                        "dateTime": "2019年6月"
+                    },
+                    {
+                        "index": "75",
+                        "city": "无锡",
+                        "projectName": "江阴港集团工业互联网",
+                        "company": "江阴港集团",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年7月"
+                    },
+                    {
+                        "index": "76",
+                        "city": "无锡",
+                        "projectName": "无锡机场智能交通",
+                        "company": "无锡机场",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年7月"
+                    },
+                    {
+                        "index": "77",
+                        "city": "无锡",
+                        "projectName": "无锡市公安局视频安防",
+                        "company": "无锡市公安局",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年7月"
+                    },
+                    {
+                        "index": "78",
+                        "city": "无锡",
+                        "projectName": "无锡贝斯特精机公司工业互联网",
+                        "company": "无锡贝斯特精机公司",
+                        "cooperOffice": "电信",
+                        "dateTime": "2019年7月"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.301663,
+                    31.574729
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "宿迁",
+                "mag": 1,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "test": [
+                    {
+                        "index": "79",
+                        "city": "宿迁",
+                        "projectName": "京东集团无人配送",
+                        "company": "京东",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.275162,
+                    33.963008
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "徐州",
+                "mag": 1,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "test": [
+                    {
+                        "index": "80",
+                        "city": "徐州",
+                        "projectName": "徐工研究院智慧矿区、远程驾驶、无线监控",
+                        "company": "徐工集团",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    117.184811,
+                    34.261792
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "镇江",
+                "mag": 4,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "test": [
+                    {
+                        "index": "81",
+                        "city": "镇江",
+                        "projectName": "江苏仅一联合智造云AGV、自动配送",
+                        "company": "仅一联合智造",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "82",
+                        "city": "镇江",
+                        "projectName": "镇江飓风物流智能巡检、智慧物流",
+                        "company": "飓风物流",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "83",
+                        "city": "镇江",
+                        "projectName": "索普集团智能巡检、智慧物流",
+                        "company": "索普集团",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    },
+                    {
+                        "index": "84",
+                        "city": "镇江",
+                        "projectName": "国家能源集团谏壁发电厂智慧工厂",
+                        "company": "国家能源集团谏壁发电厂",
+                        "cooperOffice": "电信",
+                        "dateTime": "推进签约中"
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.452753,
+                    32.204402
+                ]
+            }
+        }
+    ]
+}

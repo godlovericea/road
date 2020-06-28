@@ -1,0 +1,219 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id":1,
+                "city":"南京",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList": []
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.946973,31.772752]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "city":"无锡",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList": []
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ 119.021265,33.597506]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 3,
+                "city":"徐州",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [118.767413, 32.041544]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 4,
+                "city":"常州",
+                "mag": 51,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.619585,31.299379]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 5,
+                "city":"苏州",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.63132,31.30227]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 6,
+                "city":"南通",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.85737,32.00986]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 7,
+                "city":"连云港市",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.1773,34.84065]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 8,
+                "city":"淮安市",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.021263,33.597507]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 9,
+                "city":"盐城市",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.50102,33.20107]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 10,
+                "city":"扬州市",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.43157,32.39463]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 11,
+                "city":"镇江市",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.43396,32.13188]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 12,
+                "city":"泰州市",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.88116,32.31841]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 13,
+                "city":"宿迁市",
+                "mag": 0,
+                "time": 1507425650893,
+                "felt": null,
+                "tsunami": 0,
+                "comList":[]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [118.241703,33.964418]
+            }
+        }
+    ]
+}

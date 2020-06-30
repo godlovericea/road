@@ -2,7 +2,7 @@
     <div id="map">
         <div class="headerBox">
             <img src="../../src/assets/images/logo.png" alt="" />
-            <p class="title">全省5G产业生态在线系统</p>
+            <p class="title">智能交通流量数据展示</p>
         </div>
         <div class="switchBox">
             <span class="switchTitle">卫星影像</span
@@ -13,7 +13,7 @@
                 @change="setMapTheme"
             ></el-switch>
         </div>
-        <div class="bottomBox">
+        <!-- <div class="bottomBox">
             <div
                 v-for="item in navBarList"
                 :key="item.id"
@@ -37,8 +37,8 @@
                     >退出</el-button
                 >
             </div>
-        </div>
-        <div class="leftBox">
+        </div> -->
+        <!-- <div class="leftBox">
             <div class="leftItemsBox">
                 <div class="leftheaderBox">
                     <p class="headerTitle">企业数量</p>
@@ -53,8 +53,8 @@
                 <div class="etitle">总产值：{{ totalValue }}亿元</div>
                 <div id="modelll"></div>
             </div>
-        </div>
-        <div class="rightBox">
+        </div> -->
+        <!-- <div class="rightBox">
             <el-input v-model="search" placeholder="请输入企业名称">
                 <el-button
                     slot="append"
@@ -68,116 +68,6 @@
             </div>
             <div class="content">
                 <div class="btnGroups">
-                    <!-- <md-tabs @md-changed="getScenList" md-alignment="fixed">
-                        <md-tab class="movies" id="1" md-label="产品">
-                            <div class="cardBox" v-for="(item,index) in productList" :key="index">
-                                <div class="cardContent">
-                                    <p class="cardTitle">{{item.productName}}</p>
-                                    <p class="cardDetail">{{item.productIntroduce}}</p>
-                                    <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showProductDetail(item)">查看更多>></el-button>
-                                </div>
-                            </div>
-                        </md-tab>
-                        <md-tab id="2" class="movies" md-label="项目">
-                            <div class="cardBox" v-for="(item,index) in projectList" :key="index">
-                                <div v-if="!adminFlag">
-                                    <div class="cardContent" v-if="item.isEncryption === 0">
-                                        <p class="cardTitle">{{item.projectName}}</p>
-                                        <p class="cardDetail">{{item.projectIntroduce}}</p>
-                                        <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showProjectDetail(item)">查看更多>></el-button>
-                                    </div>
-                                    <div class="cardContent" v-if="item.isEncryption === 1">
-                                        <p class="cardTitle">{{item.projectName}}</p>
-                                        <p class="cardDetail">加密：{{item.encryptionCode}}</p>
-                                    </div>
-                                </div>
-                                <div v-if="adminFlag">
-                                    <div class="cardContent">
-                                        <p class="cardTitle">{{item.projectName}}</p>
-                                        <p class="cardDetail">{{item.projectIntroduce}}</p>
-                                        <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showProjectDetail(item)">查看更多>></el-button>
-                                    </div>
-                                </div>
-                            </div>
-                        </md-tab>
-                        <md-tab id="3" class="movies" md-label="需求">
-                            <div class="cardBox" v-for="(item,index) in needList" :key="index">
-                                <div v-if="!adminFlag">
-                                    <div class="cardContent" v-if="item.isEncryption === 0">
-                                        <p class="cardTitle">{{item.demandName}}</p>
-                                        <p class="cardDetail">{{item.demandInfo}}</p>
-                                        <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showProjectDetail(item)">查看更多>></el-button>
-                                    </div>
-                                    <div class="cardContent" v-if="item.isEncryption === 1">
-                                        <p class="cardTitle">{{item.demandName}}</p>
-                                        <p class="cardDetail">加密：{{item.encryptionCode}}</p>
-                                    </div>
-                                </div>
-                                <div v-if="adminFlag">
-                                    <div class="cardContent">
-                                        <p class="cardTitle">{{item.demandName}}</p>
-                                        <p class="cardDetail">{{item.demandIndo}}</p>
-                                        <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showNeedDetail(item)">查看更多>></el-button>
-                                    </div>
-                                </div>
-                            </div>
-                        </md-tab>
-                    </md-tabs> -->
-                    <!-- <el-tabs v-model="activeName" @tab-click="handleClick" class="elementTabs">
-                        <el-tab-pane label="产品" name="1">
-                            <div class="cardBox" v-for="(item,index) in productList" :key="index">
-                                <div class="cardContent">
-                                    <p class="cardTitle">{{item.productName}}</p>
-                                    <p class="cardDetail">{{item.productIntroduce}}</p>
-                                    <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showProductDetail(item)">查看更多>></el-button>
-                                </div>
-                            </div>
-                        </el-tab-pane>
-                        <el-tab-pane label="项目" name="2">
-                            <div class="cardBox" v-for="(item,index) in projectList" :key="index">
-                                <div v-if="!adminFlag">
-                                    <div class="cardContent" v-if="item.isEncryption === 0">
-                                        <p class="cardTitle">{{item.projectName}}</p>
-                                        <p class="cardDetail">{{item.projectIntroduce}}</p>
-                                        <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showProjectDetail(item)">查看更多>></el-button>
-                                    </div>
-                                    <div class="cardContent" v-if="item.isEncryption === 1">
-                                        <p class="cardTitle">{{item.projectName}}</p>
-                                        <p class="cardDetail">加密：{{item.encryptionCode}}</p>
-                                    </div>
-                                </div>
-                                <div v-if="adminFlag">
-                                    <div class="cardContent">
-                                        <p class="cardTitle">{{item.projectName}}</p>
-                                        <p class="cardDetail">{{item.projectIntroduce}}</p>
-                                        <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showProjectDetail(item)">查看更多>></el-button>
-                                    </div>
-                                </div>
-                            </div>
-                        </el-tab-pane>
-                        <el-tab-pane label="需求" name="3">
-                            <div class="cardBox" v-for="(item,index) in needList" :key="index">
-                                <div v-if="!adminFlag">
-                                    <div class="cardContent" v-if="item.isEncryption === 0">
-                                        <p class="cardTitle">{{item.demandName}}</p>
-                                        <p class="cardDetail">{{item.demandInfo}}</p>
-                                        <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showProjectDetail(item)">查看更多>></el-button>
-                                    </div>
-                                    <div class="cardContent" v-if="item.isEncryption === 1">
-                                        <p class="cardTitle">{{item.demandName}}</p>
-                                        <p class="cardDetail">加密：{{item.encryptionCode}}</p>
-                                    </div>
-                                </div>
-                                <div v-if="adminFlag">
-                                    <div class="cardContent">
-                                        <p class="cardTitle">{{item.demandName}}</p>
-                                        <p class="cardDetail">{{item.demandIndo}}</p>
-                                        <el-button type="text" style="color:'#ffffff';text-align: right;" @click="showNeedDetail(item)">查看更多>></el-button>
-                                    </div>
-                                </div>
-                            </div>
-                        </el-tab-pane>
-                    </el-tabs> -->
                     <el-radio-group
                         v-model="activeName"
                         @change="changeActiveName"
@@ -274,7 +164,6 @@
                                     <p class="cardTitle">
                                         {{ item.demandName }}
                                     </p>
-                                    <!-- <p class="cardDetail">{{item.demandInfo}}</p> -->
                                     <span v-if="item.type === 1"
                                         >主营产品需求</span
                                     >
@@ -392,7 +281,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="sceanDetailDialog" v-if="sceanFlag">
             <div class="sceanDialogHeader">
                 <p class="dialogTitle">{{ sceanData.title }}</p>
@@ -479,7 +368,6 @@
                 <el-tabs :tab-position="tabPosition" :stretch="false">
                     <el-tab-pane :label="enterpriseName">
                         <div class="enterpriseDetail">
-                            <singleEcharts :id="enterpriseName"></singleEcharts>
                             <div class="detailBox">
                                 <!-- <p>法人：{{enterprise.legalPerson}}</p> -->
                                 <p>法人：{{ enterprise.opername }}</p>
@@ -561,23 +449,16 @@
 
 <script>
 // 万里
+import Vue from 'vue'
 import mapboxgl from "mapbox-gl"
-import parkList from "../jsonFile/汇总.json"
-import algorithm from "../assets/distributeFile/算法.json"
-import idCard from "../assets/distributeFile/芯片.json"
-import model from "../assets/distributeFile/模块.json"
-import system from "../assets/distributeFile/系统.json"
-import network from "../assets/distributeFile/网络.json"
-import platform from "../assets/distributeFile/平台.json"
-import terminal from "../assets/distributeFile/终端.json"
-import smartGov from "../assets/distributeFile/智慧政务.json"
 import echarts from "echarts"
-import singleEcharts from "../components/singleEcharts"
 import axios from "axios"
 import enterpriseAll from "../fiveData/enterpriseAll.json"
 import enterprise from "../fiveData/enterprise.json"
 import jiangsusheng from "../cityJson/江苏省.json"
 import nanjingDis from "../cityJson/南京市.json"
+import fourData from '../roadJson/four.json'
+import PopupBox from './PopupBox'
 import {
     listBaseInfoByStream,
     listProductByStream,
@@ -619,16 +500,11 @@ export default {
             ], // 底部导航栏菜单
             isClick: 4, // 默认选择全部
             search: "", //搜索框输入内容
-            scean: 1, //场景,
-            sceanList: [],
             sceanFlag: false,
             sceanData: {},
             enterpriseFlag: false,
             tabPosition: "left",
-            markers: {},
-            markersOnScreen: {},
             colors: ["#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c"],
-            marker: "",
             enterpriseList: [],
             parkName: "",
             activeIndex: 0,
@@ -719,12 +595,6 @@ export default {
             totalValue: 581.95,
             amount: 0,
             activeName: "产品",
-            CompanyProducts: [],
-            Employees: [],
-            detail: {},
-            Industry: {},
-            Partners: [],
-            ScopeIn: "",
             knowledge: 0,
             legalPerson: "",
             ContactInfo: {},
@@ -738,29 +608,28 @@ export default {
             productList: [],
             projectList: [],
             needList: [],
-            marker: "",
-            markersList: [],
-            signmarker: "",
             dataValue: {},
             loginFlag: false,
             adminFlag: false,
             comName: "",
-            activeTab: 1,
-            newActiveTab: 0,
-            oldActiveTab: 0,
             popup: "",
-            proFlag: false
+            proFlag: false,
+            socket: '',
+            websocket: '',
+            hoveredStateId: null,
+            colorList:["#008000","#FF8C00","#D2691E","#FF4500","#800000"],
         }
     },
-    components: {
-        singleEcharts,
+    components:{
+        PopupBox
     },
     mounted() {
+        // this.initWebsocket()
+        // this.handleWebsocket()
         this.checkBrowserVersion()
         this.initMap()
-        this.getEchartsData()
-        this.checkLogin()
-        this.getScenList()
+        // this.getEchartsData()
+        // this.getScenList()
     },
     methods: {
         checkBrowserVersion() {
@@ -772,64 +641,24 @@ export default {
                 window.location.href = "https://www.google.cn/chrome/"
                 return false
             }
-            // var Sys = {};
-            // var ua = navigator.userAgent.toLowerCase();
-            // var s;
-            // (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
-            // (s = ua.match(/firefox/([\d.]+)/)) ? Sys.firefox = s[1] :
-            // (s = ua.match(/chrome/([\d.]+)/)) ? Sys.chrome = s[1] :
-            // (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
-            // (s = ua.match(/version/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
-            // /以下进行测试/
-            // if (Sys.ie) {
-            //     this.centerDialogVisible = true
-            // };
-            // if (Sys.firefox) {
-            //     this.centerDialogVisible = false
-            // };
-            // if (Sys.chrome) {
-            //     this.centerDialogVisible = false
-            // };
-            // if (Sys.opera) {
-            //     this.centerDialogVisible = false
-            // };
-            // if (Sys.safari) {
-            //     this.centerDialogVisible = false
-            // };
-            // if (Sys.ie == 9.0 || Sys.ie == 8.0 || Sys.ie == 7.0 || Sys.ie == 7.0){
-            //     window.location.href="https://www.google.cn/chrome/"
-            // }
-            // var Sys = {};
-            // var ua = navigator.userAgent.toLowerCase();
-            // var s;
-            // (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
-            // (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
-            // (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
-            // (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
-            // (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
-            // /*以下进行测试*/
-            // if (Sys.ie) this.centerDialogVisible = true;
-            // if (Sys.firefox) this.centerDialogVisible = false;
-            // if (Sys.chrome) this.centerDialogVisible = false;
-            // if (Sys.opera) this.centerDialogVisible = false;
-            // if (Sys.safari) this.centerDialogVisible = false;
-
-            // if (Sys.ie == 9.0 || Sys.ie == 8.0 || Sys.ie == 7.0 || Sys.ie == 6.0){
-            //     window.location.href="https://www.google.cn/chrome/"
-            // }
         },
         checkLogin() {
-            if (!sessionStorage.getItem("user")) {
-                this.adminFlag = false
-            } else {
-                this.adminFlag =
-                    JSON.parse(sessionStorage.getItem("user")).isAdmin === 1
-                        ? true
-                        : false
-                this.comName = JSON.parse(
-                    sessionStorage.getItem("user")
-                ).comName
-            }
+            console.log(this.map.getSource("xuefu")._data.features)
+            let featureData = this.map.getSource("xuefu")._data
+            featureData.features.forEach(el=>{
+                if(el.properties.status < 2.5) {
+                    el.properties.color = this.colorList[0]
+                } else if (el.properties.status < 4.5) {
+                    el.properties.color = this.colorList[1]
+                } else if (el.properties.status < 6.5) {
+                    el.properties.color = this.colorList[2]
+                } else if (el.properties.status < 8.5) {
+                    el.properties.color = this.colorList[3]
+                } else if (el.properties.status < 10.5) {
+                    el.properties.color = this.colorList[4]
+                }
+                this.map.getSource("xuefu").setData(featureData);
+            })
         },
         initMap() {
             mapboxgl.accessToken =
@@ -838,29 +667,75 @@ export default {
                 container: "map",
                 // style: "http://106.15.47.224:8688/styles/newblue/style.json",
                 style: "mapbox://styles/zplinze/ck2wvh2pa05ip1cr8supcaivg",
-                center: [119.8526, 32.910144],
-                zoom: 7.5,
+                center: [118.70035238943387, 32.172209674476335],
+                zoom: 14.5,
                 pitch: 60,
                 bearing: -0.03,
             })
             // this.map.getSource('earthquakes').setData(enterpriseAll)
-            this.map.on("mouseenter", "earthquake_label", (e) => {
+            this.map.on("mouseenter", "xuefu", (e) => {
                 // console.log(e);
-                let poptitle = e.features[0].properties.city
+                if (this.hoveredStateId) {
+                    this.map.setFeatureState(
+                        { source: 'xuefu', id: this.hoveredStateId },
+                        { hover: false }
+                        );
+                    }
+                    this.hoveredStateId = e.features[0].id;
+                    this.map.setFeatureState(
+                        { source: 'xuefu', id: this.hoveredStateId },
+                        { hover: true }
+                    );
+                let poptitle = e.features[0].properties.name
+                const dom = document.createElement("div");
                 this.popup = new mapboxgl.Popup({
                     closeButton: false,
                 })
                     .setLngLat(e.lngLat)
-                    .setText(poptitle)
+                    .setDOMContent(dom)
                     .addTo(this.map)
+                    new Vue({
+                        render: h =>
+                        h(PopupBox, {
+                            props: {
+                                width: "700px",
+                                type: "resource",
+                                target: {
+                                    poptitle
+                                },
+                                roadData:'1111'
+                            }
+                        })
+                    }).$mount(dom);
             })
-            this.map.on("mouseleave", "earthquake_label", (e) => {
+            this.map.on("mouseleave", "xuefu", (e) => {
                 this.popup.remove()
             })
             this.map.on("styledata", () => {
                 this.getPrivinceData(4)
-                this.getQixiaDistribute()
+                this.handleXuefulu()
             })
+        },
+        handleWebsocket(){
+            const wsuri = "ws://127.0.0.1:8080";
+            this.websocket = new WebSocket(wsuri);
+            this.websocket.onopen = this.websocketonopen;
+            this.websocket.onmessage = this.websocketonmessage;
+            this.websocket.onerror = this.websocketonerror;
+            this.websocket.onclose = this.websocketclose;
+        },
+        websocketonopen() {
+            const data = {}
+            this.websocket.send(JSON.stringify(data))
+        },
+        websocketonmessage(event){
+            console.log(event)
+        },
+        websocketonerror(){
+            this.handleWebsocket()
+        },
+        websocketclose(e){
+            console.log(e)
         },
         getEchartsData() {
             getScale().then((res) => {
@@ -988,95 +863,6 @@ export default {
                     }
                     this.getScenList()
                 }
-            })
-        },
-        // 获取雷达图
-        getRadarEnterprise() {
-            let myChart = echarts.init(document.getElementById("enterprise"))
-            let option = {
-                // title: {
-                //     text: '基础雷达图'
-                // },
-                tooltip: {},
-                // legend: {
-                //     data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）']
-                // },
-                radar: {
-                    // shape: 'circle',
-                    name: {
-                        textStyle: {
-                            color: "#fff",
-                            // backgroundColor: '#999',
-                            borderRadius: 3,
-                            padding: [3, 5],
-                        },
-                    },
-                    indicator: [
-                        { name: "算法", max: 36500 },
-                        { name: "芯片", max: 16000 },
-                        { name: "模块", max: 30000 },
-                        { name: "终端", max: 38000 },
-                        { name: "系统", max: 52000 },
-                        { name: "网络", max: 25000 },
-                        { name: "平台", max: 25000 },
-                    ],
-                    splitArea: {
-                        areaStyle: {
-                            color: ["#101B26"],
-                            shadowColor: "rgba(0, 0, 0, 0.3)",
-                            shadowBlur: 10,
-                        },
-                    },
-                    axisLine: {
-                        lineStyle: {
-                            color: "rgba(114, 131, 150, 1)",
-                        },
-                    },
-                    splitLine: {
-                        lineStyle: {
-                            color: "rgba(114, 131, 150, 1)",
-                        },
-                    },
-                },
-                series: [
-                    {
-                        name: "从业人数",
-                        type: "radar",
-                        areaStyle: {
-                            normal: {
-                                color: "#1087F6", // 图表中各个图区域的颜色
-                                areaStyle: {
-                                    type: "default",
-                                    opacity: 0.8, // 图表中各个图区域的透明度
-                                    color: "#ff0000", // 图表中各个图区域的颜色
-                                },
-                            },
-                        },
-                        data: [
-                            {
-                                value: [
-                                    14300,
-                                    10000,
-                                    28000,
-                                    35000,
-                                    50000,
-                                    19000,
-                                    5200,
-                                ],
-                                name: "从业人数",
-                                itemStyle: {
-                                    normal: {
-                                        color: "#1087F6", // 图表中各个图区域的颜色
-                                    },
-                                },
-                            },
-                        ],
-                    },
-                ],
-            }
-            myChart.setOption(option)
-            window.addEventListener("resize", () => {
-                myChart.resize()
             })
         },
         // 获取柱状图
@@ -1319,38 +1105,6 @@ export default {
                 myChart.resize()
             })
         },
-        getSearchResult() {
-            if (!this.search) {
-                this.map.getSource("earthquakes").setData(parkList)
-            }
-            // this.enterpriseFlag = true
-            parkList.features.forEach((el) => {
-                el.properties.test.forEach((l) => {
-                    if (l.enterpriseName.indexOf(this.search)) {
-                        this.searchReault.features[0].properties.test.push(l)
-                        this.searchReault.features[0].geometry.coordinates =
-                            el.geometry.coordinates
-                    }
-                })
-            })
-            this.map.getSource("earthquakes").setData(this.searchReault)
-            // this.searchEnterprise = this.searchReault.features[0].properties.test[0].enterpriseName
-            // console.log(this.searchReault.features[0].properties)
-        },
-        // 点击场景设置图层数据
-        clusterMapDis(name) {
-            // this.map.getSource('earthquakes').setData(smartGov)
-            this.newSceanListArr.forEach((l) => {
-                if (l.properties.id === name) {
-                    this.map.flyTo({
-                        center: l.geometry.coordinates,
-                        zoom: 15,
-                    })
-                }
-            })
-
-            // this.handleAnimateCircle()
-        },
         closeDialog() {
             this.sceanFlag = false
             this.sceanData = {}
@@ -1360,198 +1114,6 @@ export default {
             this.search = ""
             this.activeIndex = 0
             this.getScenList()
-        },
-        getSomeOneRadarEnterprise() {
-            let myChart = echarts.init(document.getElementById(this.radar))
-            let option = {
-                // title: {
-                //     text: '南邮研究院',
-                //     textStyle:{
-                //         color:'#ffffff'
-                //     }
-                // },
-                tooltip: {},
-                // legend: {
-                //     data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）']
-                // },
-                radar: {
-                    // shape: 'circle',
-                    name: {
-                        textStyle: {
-                            color: "#fff",
-                            // backgroundColor: '#999',
-                            borderRadius: 3,
-                            padding: [3, 5],
-                        },
-                    },
-                    indicator: [
-                        { name: "算法", max: 6500 },
-                        { name: "芯片", max: 16000 },
-                        { name: "模块", max: 30000 },
-                        { name: "终端", max: 38000 },
-                        { name: "系统", max: 52000 },
-                        { name: "网络", max: 25000 },
-                        { name: "平台", max: 25000 },
-                    ],
-                    splitArea: {
-                        areaStyle: {
-                            color: ["#114474"],
-                            shadowColor: "rgba(0, 0, 0, 0.3)",
-                            shadowBlur: 10,
-                        },
-                    },
-                    axisLine: {
-                        lineStyle: {
-                            color: "rgba(114, 131, 150, 1)",
-                        },
-                    },
-                    splitLine: {
-                        lineStyle: {
-                            color: "rgba(114, 131, 150, 1)",
-                        },
-                    },
-                },
-                series: [
-                    {
-                        name: "预算 vs 开销（Budget vs spending）",
-                        type: "radar",
-                        areaStyle: {
-                            normal: {
-                                color: "#1087F6", // 图表中各个图区域的颜色
-                                areaStyle: {
-                                    type: "default",
-                                    opacity: 0.8, // 图表中各个图区域的透明度
-                                    color: "#ff0000", // 图表中各个图区域的颜色
-                                },
-                            },
-                        },
-                        data: [
-                            {
-                                value: [
-                                    4300,
-                                    10000,
-                                    28000,
-                                    35000,
-                                    50000,
-                                    19000,
-                                    5200,
-                                ],
-                                name: "预算分配（Allocated Budget）",
-                                itemStyle: {
-                                    normal: {
-                                        color: "#1087F6", // 图表中各个图区域的颜色
-                                    },
-                                },
-                            },
-                        ],
-                    },
-                ],
-            }
-            myChart.setOption(option)
-            window.addEventListener("resize", () => {
-                myChart.resize()
-            })
-        },
-        getAllDistribute() {
-            var mag1 = ["<", ["get", "mag"], 5]
-            var mag2 = [
-                "all",
-                [">=", ["get", "mag"], 10],
-                ["<", ["get", "mag"], 20],
-            ]
-            var mag3 = [
-                "all",
-                [">=", ["get", "mag"], 20],
-                ["<", ["get", "mag"], 30],
-            ]
-            var mag4 = [
-                "all",
-                [">=", ["get", "mag"], 30],
-                ["<", ["get", "mag"], 40],
-            ]
-            var mag5 = [">=", ["get", "mag"], 40]
-
-            if (!this.map.getSource("earthquakes")) {
-                this.map.addSource("earthquakes", {
-                    type: "geojson",
-                    data: enterpriseAll,
-                    cluster: false,
-                    clusterRadius: 80,
-                    clusterProperties: {
-                        // keep separate counts for each magnitude category in a cluster
-                        mag1: ["+", ["case", mag1, 1, 0]],
-                        mag2: ["+", ["case", mag2, 1, 0]],
-                        mag3: ["+", ["case", mag3, 1, 0]],
-                        mag4: ["+", ["case", mag4, 1, 0]],
-                        mag5: ["+", ["case", mag5, 1, 0]],
-                    },
-                })
-            }
-
-            if (!this.map.getLayer("earthquake_circle")) {
-                this.map.addLayer({
-                    id: "earthquake_circle",
-                    type: "circle",
-                    source: "earthquakes",
-                    filter: ["!=", "cluster", true],
-                    paint: {
-                        "circle-color": [
-                            "case",
-                            mag1,
-                            this.colors[0],
-                            mag2,
-                            this.colors[1],
-                            mag3,
-                            this.colors[2],
-                            mag4,
-                            this.colors[3],
-                            this.colors[4],
-                        ],
-                        "circle-opacity": 0.6,
-                        "circle-radius": 20,
-                    },
-                })
-            }
-
-            if (!this.map.getLayer("earthquake_label")) {
-                this.map.addLayer({
-                    id: "earthquake_label",
-                    type: "symbol",
-                    source: "earthquakes",
-                    cluster: false,
-                    // "filter": ["!=", "cluster", true],
-
-                    layout: {
-                        "text-field": [
-                            "number-format",
-                            ["get", "mag"],
-                            {
-                                "min-fraction-digits": 0,
-                                "max-fraction-digits": 1,
-                            },
-                        ],
-                        "text-font": [
-                            "Open Sans Semibold",
-                            "Arial Unicode MS Bold",
-                        ],
-                        "text-size": 18,
-                        "text-allow-overlap": true,
-                    },
-                    paint: {
-                        // "text-color": ["case", ["<", ["get", "mag"], 3], "black", "white"]
-                        "text-color": "white",
-                    },
-                })
-            }
-            // console.log("data没有进来了")
-            this.map.on("data", (e) => {
-                // console.log("data进来了")
-                // console.log(e)
-                if (e.sourceId !== "earthquakes" || !e.isSourceLoaded) {
-                    return
-                }
-                this.map.on("click", "earthquake_label", this.handleMarkerClick)
-            })
         },
         handleMarkerClick(e) {
             //   console.log(e);
@@ -1576,214 +1138,6 @@ export default {
             // console.log(tab.label)
             this.search = tab.label
             this.getScenList()
-        },
-        getQixiaDistribute() {
-            const dottedLine = jiangsusheng
-            // console.log("123")
-            if (!this.map.getSource("dottedlines_label")) {
-                this.map.addSource("dottedlines_label", jiangsusheng)
-                // this.map.addSource('dottedlines_label_nj',nanjingDis);
-            } else {
-                return false
-            }
-
-            // console.log("456")
-            // if (!this.map.getLayer('qixiaDis')){
-            this.map.addLayer({
-                id: "qixiaDis",
-                type: "fill",
-                source: "dottedlines_label",
-                paint: {
-                    "fill-color": "#ffffff",
-                    "fill-opacity": 0.05,
-                },
-            })
-            this.map.addLayer({
-                id: "qixiaDisline",
-                type: "line",
-                source: "dottedlines_label",
-                paint: {
-                    "line-dasharray": [3, 2],
-                    "line-width": 1.5,
-                    "line-opacity": 1,
-                    "line-color": "#ffffff",
-                },
-            })
-            // this.map.addLayer({
-            //     'id': 'njDis',
-            //     'type': 'fill',
-            //     'source':'dottedlines_label_nj',
-            //     'paint': {
-            //         "fill-color":"#ffffff",
-            //         "fill-opacity":0.05,
-            //     }
-            // });
-            // this.map.addLayer({
-            //     'id': 'njDisline',
-            //     'type': 'line',
-            //     'source':'dottedlines_label_nj',
-            //     'paint': {
-            //         'line-dasharray':[3,2],
-            //         'line-width': 1.5,
-            //         "line-opacity":1,
-            //         'line-color': '#ffffff'
-            //     }
-            // });
-            // }
-        },
-        selectScean(params) {
-            this.scean = params
-        },
-        handleAnimateCircle() {
-            var size = 200
-            var pulsingDot = {
-                width: size,
-                height: size,
-                data: new Uint8Array(size * size * 4),
-
-                onAdd: () => {
-                    var canvas = document.createElement("canvas")
-                    canvas.width = this.width
-                    canvas.height = this.height
-                    this.context = canvas.getContext("2d")
-                },
-
-                render: () => {
-                    var duration = 1000
-                    var t = (performance.now() % duration) / duration
-
-                    var radius = (size / 2) * 0.3
-                    var outerRadius = (size / 2) * 0.7 * t + radius
-                    var context = this.context
-
-                    // draw outer circle
-                    context.clearRect(0, 0, this.width, this.height)
-                    context.beginPath()
-                    context.arc(
-                        this.width / 2,
-                        this.height / 2,
-                        outerRadius,
-                        0,
-                        Math.PI * 2
-                    )
-                    context.fillStyle = "rgba(255, 200, 200," + (1 - t) + ")"
-                    context.fill()
-
-                    // draw inner circle
-                    context.beginPath()
-                    context.arc(
-                        this.width / 2,
-                        this.height / 2,
-                        radius,
-                        0,
-                        Math.PI * 2
-                    )
-                    context.fillStyle = "rgba(255, 100, 100, 1)"
-                    context.strokeStyle = "white"
-                    context.lineWidth = 2 + 4 * (1 - t)
-                    context.fill()
-                    context.stroke()
-
-                    // update this image's data with data from the canvas
-                    this.data = context.getImageData(
-                        0,
-                        0,
-                        this.width,
-                        this.height
-                    ).data
-
-                    // keep the map repainting
-                    this.map.triggerRepaint()
-
-                    // return `true` to let the map know that the image was updated
-                    return true
-                },
-            }
-
-            this.map.addImage("pulsing-dot", pulsingDot, { pixelRatio: 2 })
-
-            this.map.addLayer({
-                id: "points",
-                type: "symbol",
-                source: {
-                    type: "geojson",
-                    data: {
-                        type: "FeatureCollection",
-                        features: [
-                            {
-                                type: "Feature",
-                                geometry: {
-                                    type: "Point",
-                                    coordinates: [
-                                        118.8972030341,
-                                        32.1540342558,
-                                    ],
-                                },
-                            },
-                        ],
-                    },
-                },
-                layout: {
-                    "icon-image": "pulsing-dot",
-                },
-            })
-        },
-        getQichachaData(name) {
-            axios
-                .post(
-                    "http://120.55.161.93:6011/qichacha/industryDetail?name=" +
-                        name
-                )
-                .then((res) => {
-                    if (res.data.result && res.data.code === 200) {
-                        // console.log(res.data.Result)
-                        let myData = res.data.result
-                        // console.log(myData)
-                        // console.log("789poi")
-                        // this.CompanyProducts = myData.Result.CompanyProducts
-                        this.Employees = myData.Result.Employees
-                        this.Industry = myData.Result.Industry
-                        this.Partners = myData.Result.Partners
-                        this.ScopeIn = myData.Result.Scope
-                        this.legalPerson = myData.Result.OperName
-                        this.ContactInfo = {
-                            adress: myData.Result.Address,
-                            phone: myData.Result.Address,
-                        }
-                        axios
-                            .post(
-                                "http://120.55.161.93:6011/qichacha/getPatentCount?name=" +
-                                    name
-                            )
-                            .then((res) => {
-                                this.knowledge = res.data.result
-                            })
-                    }
-                })
-        },
-        showInMapbox(params) {
-            // console.log(params)
-            this.sceanFlag = false
-            let sceanEnterPrise = []
-            enterpriseAll.features.forEach((l) => {
-                l.properties.test.forEach((el) => {
-                    if (params === el.company) {
-                        // console.log(el)
-                        sceanEnterPrise.push(el)
-                        this.searchReault.features[0].properties.test = sceanEnterPrise
-                        this.searchReault.features[0].properties.id =
-                            l.properties.id
-                        this.searchReault.features[0].geometry.coordinates =
-                            l.geometry.coordinates
-                    }
-                })
-            })
-            // console.log(this.searchReault)
-            this.map.flyTo({
-                center: this.searchReault.features[0].geometry.coordinates,
-                zoom: 15,
-            })
-            this.map.getSource("earthquakes").setData(this.searchReault)
         },
         setMapTheme() {
             if (this.switchMap) {
@@ -1924,14 +1278,14 @@ export default {
                 })
             }
         },
-        showImgBox() {
-            // this.imgTitle =
-            this.imgDialogVisible = true
-        },
         goLogin() {
-            this.$router.push({
-                path: "/login",
-            })
+            // this.$router.push({
+            //     path: "/login",
+            // })
+            console.log(this.map.getSource("xuefu"))
+            let _data = this.map.getSource("xuefu")._data;
+            _data.features[0].properties.color = 'blue';
+            this.map.getSource("xuefu").setData(_data);
         },
         changeActiveName(val) {
             this.getScenList()
@@ -1941,6 +1295,35 @@ export default {
             sessionStorage.clear()
             this.$router.go(0)
         },
+        handleXuefulu(){
+            if(this.map.getSource('xuefu')){
+                return false
+            }
+            this.map.addSource("xuefu", {
+                type: "geojson",
+                data: fourData
+            })
+            this.map.addLayer({
+                id: "xuefu",
+                type: "line",
+                source: "xuefu",
+                layout: {
+                    "line-join": "round",
+                    "line-cap": "round",
+                },
+                'paint': {
+                    'line-opacity':[
+                        'case',
+                        ['boolean', ['feature-state', 'hover'], false],
+                        1,
+                        0.5
+                    ],
+                    'line-color': ['get', 'color'],
+                    'line-width': 12
+                }
+            })
+            this.checkLogin()
+        }
     },
 }
 </script>

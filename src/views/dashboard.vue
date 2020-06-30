@@ -618,6 +618,9 @@ export default {
             websocket: '',
             hoveredStateId: null,
             colorList:["#008000","#FF8C00","#D2691E","#FF4500","#800000"],
+            token: undefined,
+            sendFlag: false,
+            trafficFlow:{}
         }
     },
     components:{
@@ -625,7 +628,7 @@ export default {
     },
     mounted() {
         // this.initWebsocket()
-        // this.handleWebsocket()
+        this.handleWebsocket()
         this.checkBrowserVersion()
         this.initMap()
         // this.getEchartsData()
@@ -690,6 +693,7 @@ export default {
                 const dom = document.createElement("div");
                 this.popup = new mapboxgl.Popup({
                     closeButton: false,
+                    maxWidth:'400px'
                 })
                     .setLngLat(e.lngLat)
                     .setDOMContent(dom)
@@ -698,12 +702,7 @@ export default {
                         render: h =>
                         h(PopupBox, {
                             props: {
-                                width: "700px",
-                                type: "resource",
-                                target: {
-                                    poptitle
-                                },
-                                roadData:'1111'
+                                roadData: this.trafficFlow
                             }
                         })
                     }).$mount(dom);
@@ -717,7 +716,7 @@ export default {
             })
         },
         handleWebsocket(){
-            const wsuri = "ws://127.0.0.1:8080";
+            const wsuri = "ws://121.225.25.19:9191/smartlight_cms/webSocketServer/1679091c5a880faf6fb5e6087eb1b2dc"
             this.websocket = new WebSocket(wsuri);
             this.websocket.onopen = this.websocketonopen;
             this.websocket.onmessage = this.websocketonmessage;
@@ -725,14 +724,38 @@ export default {
             this.websocket.onclose = this.websocketclose;
         },
         websocketonopen() {
-            const data = {}
-            this.websocket.send(JSON.stringify(data))
+            console.log("open")
+            if(!this.token){
+                const data1 = {
+                    commandType:1
+                }
+                this.websocket.send(JSON.stringify(data1))
+            }
         },
         websocketonmessage(event){
-            console.log(event)
+            console.log(JSON.parse(event.data))
+            let eventData = JSON.parse(event.data)
+            if(eventData.status === 1){
+                this.websocketonopen()
+            }
+            this.token= eventData.token
+            if(eventData.trafficFlow){
+                this.trafficFlow = eventData.trafficFlow
+            }
+            if(!this.sendFlag){
+                const data2 = {
+                    commandType: 2,
+                    token:this.token,
+                    body:{
+                        szDeviceNo:'xyf-0000001' // 设备编号
+                    }
+                }
+                this.websocket.send(JSON.stringify(data2))
+                this.sendFlag = true
+            }
         },
         websocketonerror(){
-            this.handleWebsocket()
+            // this.handleWebsocket()
         },
         websocketclose(e){
             console.log(e)

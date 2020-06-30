@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java���WebSocket��Tomcatʵ��</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    </head>
+    <body>
+        Welcome<br /><input id="text" type="text" />
+        <button onclick="send()">发送</button>
+        <hr />
+        <button onclick="closeWebSocket()">关闭</button>
+        <hr />
+        <div id="message"></div>
+    </body>
+
+    <script type="text/javascript">
+        var websocket = null
+        //�жϵ�ǰ������Ƿ�֧��WebSocket  appid��ƽ̨�ṩ��Ӧ������
+        if ("WebSocket" in window) {
+            websocket = new WebSocket(
+                "ws://121.225.25.19:9191/smartlight_cms/webSocketServer/1679091c5a880faf6fb5e6087eb1b2dc"
+            )
+        } else {
+            alert("��ǰ����� Not support websocket")
+        }
+
+        //���ӷ�������Ļص�����
+        websocket.onerror = function() {
+            setMessageInnerHTML("WebSocket���ӷ�������")
+        }
+
+        //���ӳɹ������Ļص�����
+        websocket.onopen = function() {
+            setMessageInnerHTML("WebSocket���ӳɹ�")
+        }
+
+        //���յ���Ϣ�Ļص�����
+        websocket.onmessage = function(event) {
+            setMessageInnerHTML(event.data)
+        }
+
+        //���ӹرյĻص�����
+        websocket.onclose = function() {
+            setMessageInnerHTML("WebSocket���ӹر�")
+        }
+
+        //�������ڹر��¼��������ڹر�ʱ������ȥ�ر�websocket���ӣ���ֹ���ӻ�û�Ͽ��͹رմ��ڣ�server�˻����쳣��
+        window.onbeforeunload = function() {
+            closeWebSocket()
+        }
+
+        //����Ϣ��ʾ����ҳ��
+        function setMessageInnerHTML(innerHTML) {
+            document.getElementById("message").innerHTML += innerHTML + "<br/>"
+        }
+
+        //�ر�WebSocket����
+        function closeWebSocket() {
+            websocket.close()
+        }
+
+        //������Ϣ
+        function send() {
+            var message = document.getElementById("text").value
+            websocket.send(message)
+        }
+    </script>
+</html>
